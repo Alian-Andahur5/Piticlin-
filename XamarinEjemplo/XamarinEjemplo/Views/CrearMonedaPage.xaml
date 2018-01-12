@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinEjemplo.Views.CrearMonedaPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="20" >
+            <Entry Placeholder="Nombre"
+                       Text="{Binding Nombre}"/>
+            <Entry Placeholder="Año"
+                       Text="{Binding Año}" />
+            <Entry Placeholder="Seca"
+                       Text="{Binding Seca}" />
+            <Entry Placeholder="Pais"
+                       Text="{Binding Pais}" />
+            <Entry Placeholder="Valor Nominal"
+                       Text="{Binding ValorNominal}" />
+            <Button Text="Agregar más"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
