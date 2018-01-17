@@ -7,8 +7,8 @@
              Title="Home">
     <TabbedPage.Children>
         <pages:InicioPage></pages:InicioPage>
-        <pages:InicioPage></pages:InicioPage>
-        <pages:InicioPage></pages:InicioPage>
-        <pages:InicioPage></pages:InicioPage>
+        <pages:ColeccionesPage></pages:ColeccionesPage>
+        <pages:MisSubastasPage></pages:MisSubastasPage>
+        <pages:FavoritosPage></pages:FavoritosPage>
     </TabbedPage.Children>
 </TabbedPage>
