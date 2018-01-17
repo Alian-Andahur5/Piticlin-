@@ -26,7 +26,7 @@ namespace XamarinEjemplo.Views
                 return;
             if (item.Id == 0)
             {
-                item.TargetType = typeof(CrearColeccionPage);
+                item.TargetType = typeof(MainPageDetail);
             }
            
             else if (item.Id == 1)
@@ -41,7 +41,18 @@ namespace XamarinEjemplo.Views
             {
                 item.TargetType = typeof(CrearMonedaPage);   
             }
-
+            else if (item.Id == 4)
+            {
+                item.TargetType = typeof(CrearSubastaPage);
+            }
+            else if (item.Id == 5)
+            {
+                item.TargetType = typeof(CrearVentaPage);
+            }
+            else if (item.Id == 6)
+            {
+                item.TargetType = typeof(DatosPerfilPage);
+            }
 
 
             var page = (Page)Activator.CreateInstance(item.TargetType);

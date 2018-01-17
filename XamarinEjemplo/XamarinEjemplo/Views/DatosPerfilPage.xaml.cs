@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using XamarinEjemplo.ViewModels;
 
 namespace XamarinEjemplo.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CrearSubastaPage : ContentPage
+	public partial class DatosPerfilPage : ContentPage
 	{
-		public CrearSubastaPage ()
+		public DatosPerfilPage ()
 		{
 			InitializeComponent ();
-
-            BindingContext = new CrearSubastaViewModel();   
 		}
 	}
 }

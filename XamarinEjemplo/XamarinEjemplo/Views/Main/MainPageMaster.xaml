@@ -24,8 +24,12 @@
           <Label
               Grid.Column="1"
               Grid.Row="2"
-              Text="AppName"
-              Style="{DynamicResource SubtitleStyle}"/>
+              Text="Piticlin"
+              Style="{DynamicResource subtitle}"
+              TextColor="White"
+              
+              />
+              
         </Grid>
       </ListView.Header>
       <ListView.ItemTemplate>

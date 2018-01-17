@@ -4,17 +4,18 @@
      
              x:Class="XamarinEjemplo.Views.CrearColeccionPage">
     <ContentPage.Content>
-        <StackLayout Spacing="40" Padding="40" VerticalOptions="Center">
+        <StackLayout Spacing="30" Padding="30" VerticalOptions="Center">
             <Grid>
                 
-                    <Image Aspect="AspectFit" Source="foto.jpg"/>
+                    <Image Aspect="AspectFit" Source="foto.jpg" />
                 
             </Grid>
-            <Entry Placeholder="Nombre Coleccion"
-                                   Text="{Binding Nombre}"/>
-            <Entry Placeholder="Detalle"
-                                  Text="{Binding Detalle}"/>
+            
+            <Label Text="Nombre Colección" FontSize="Small"/>
+            <Entry Text="{Binding PujaDesde}"/>
 
+            <Label Text="Descripción" FontSize="Small"/>
+            <Editor Text="{Binding Descripcion}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

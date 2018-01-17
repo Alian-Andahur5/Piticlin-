@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Home"
+             x:Class="XamarinEjemplo.Views.DatosPerfilPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0">
+            <Label Text="Juanito Perez" HorizontalOptions="Center"></Label>
+            <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Image Source="profile.png" HorizontalOptions="Center"></Image>
+            </StackLayout>
+        </StackLayout>
+        <Frame Margin="10" Grid.Row="1">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Center">
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="10" Grid.Row="2">
+            <StackLayout  VerticalOptions="Start" HorizontalOptions="Center">
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="Nombre"></Label>
+                    <Label FontSize="Small" Text="Juan"></Label>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

@@ -11,7 +11,7 @@ using XamarinEjemplo.ViewModels;
 namespace XamarinEjemplo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPageDetail : ContentPage
+    public partial class MainPageDetail : TabbedPage
     {
         public MainPageDetail()
         {

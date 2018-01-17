@@ -4,9 +4,16 @@
              x:Class="XamarinEjemplo.Views.HistorialPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Historial page !"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+
+            <BoxView Color="CornflowerBlue"
+             WidthRequest="160"
+             HeightRequest="160"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

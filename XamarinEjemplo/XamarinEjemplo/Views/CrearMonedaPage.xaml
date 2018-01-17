@@ -14,7 +14,21 @@
                        Text="{Binding Pais}" />
             <Entry Placeholder="Valor Nominal"
                        Text="{Binding ValorNominal}" />
-            <Button Text="Agregar más"/>
+
+            <Button Text="Agregar más"
+                    TextColor="Blue"
+      
+                    />
+
+            <Grid >
+                
+                <Label Text="Tomar fotografias"/>
+            </Grid>
+            
+            
+            
         </StackLayout>
+        
+        
     </ContentPage.Content>
 </ContentPage>
