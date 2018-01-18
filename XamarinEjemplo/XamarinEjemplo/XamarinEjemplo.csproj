@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Xam.Plugin.Iconize" Version="2.0.0.37-beta" />
+    <PackageReference Include="Xam.Plugin.Iconize.Material" Version="2.0.0.37-beta" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="2.0.0.36-beta" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>

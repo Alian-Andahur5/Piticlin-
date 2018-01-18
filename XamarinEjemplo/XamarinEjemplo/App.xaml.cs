@@ -12,7 +12,9 @@ namespace XamarinEjemplo
 	{
 		public App ()
 		{
-			InitializeComponent();
+            Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.MaterialModule());
+
+            InitializeComponent();
 
 			MainPage = new MainPage();
 		}

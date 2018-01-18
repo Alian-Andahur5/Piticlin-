@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Iconize;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ using XamarinEjemplo.ViewModels;
 namespace XamarinEjemplo.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPageDetail : TabbedPage
+    public partial class MainPageDetail : IconTabbedPage
     {
         public MainPageDetail()
         {

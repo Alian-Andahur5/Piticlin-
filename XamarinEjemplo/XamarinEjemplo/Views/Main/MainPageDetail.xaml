@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<iconize:IconTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-        
+              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
             xmlns:pages="clr-namespace:XamarinEjemplo.Views"
             x:Class="XamarinEjemplo.Views.MainPageDetail"
              Title="Home">
+ 
     <TabbedPage.Children>
-        <pages:InicioPage></pages:InicioPage>
-        <pages:ColeccionesPage></pages:ColeccionesPage>
-        <pages:MisSubastasPage></pages:MisSubastasPage>
-        <pages:FavoritosPage></pages:FavoritosPage>
+        <pages:InicioPage Icon="md-home"></pages:InicioPage>
+        <pages:ColeccionesPage Icon="md-list"></pages:ColeccionesPage>
+        <pages:MisSubastasPage Icon="md-gavel"></pages:MisSubastasPage>
+        <pages:FavoritosPage Icon="md-grade"></pages:FavoritosPage>
     </TabbedPage.Children>
-</TabbedPage>
+</iconize:IconTabbedPage>
