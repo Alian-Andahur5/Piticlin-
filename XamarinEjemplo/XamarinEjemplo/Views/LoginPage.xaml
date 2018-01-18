@@ -3,15 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinEjemplo.Views.LoginPage">
     <ContentPage.Content>
-        <StackLayout  Spacing="20" Padding="20" VerticalOptions="Center">
-            <Entry Placeholder="Ingrese su usuario"
-                       Text="{Binding Usuario}" />
-            <Entry Placeholder="Ingrese su contraseña"
-                       Text="{Binding Contraseña}"
-                       IsPassword="true"/>
-            <Button Text="Login" TextColor="White"
-                        BackgroundColor="#77D065"
-                        Command="{Binding LoginCommand}"/>
-        </StackLayout>
+
+
+        <Grid>
+
+            <Image Source="fondo.jpg" Aspect="AspectFill" />
+            <BoxView Color="LightBlue" Opacity="0.8"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="app.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+
+                    <Entry Placeholder="Correo electronico" PlaceholderColor="White"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"/>
+                    <Button Text="Iniciar Sesion" BackgroundColor="White" BorderRadius="25" TextColor="LightBlue"/>
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <Label Text="Recuperar contraseña" TextColor="White"/>
+                        <Label Text="Registrarse" HorizontalOptions="EndAndExpand" TextColor="White"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+            </Grid>
+
+        </Grid>
+      
     </ContentPage.Content>
 </ContentPage>
