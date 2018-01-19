@@ -16,5 +16,12 @@ namespace XamarinEjemplo.Views
 		{
 			InitializeComponent ();
 		}
-	}
-}
+
+        protected void MenuClick(object sender, EventArgs evento)
+        {
+            App.Current.MainPage = new NavigationPage(new MainPage());
+
+
+           }
+        }
+    }

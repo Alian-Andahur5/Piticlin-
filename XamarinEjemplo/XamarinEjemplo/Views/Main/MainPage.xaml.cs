@@ -35,7 +35,7 @@ namespace XamarinEjemplo.Views
             }
             else if (item.Id == 2)
             {
-                item.TargetType = typeof(LoginPage);
+                item.TargetType = typeof(MonedaPage);
             }
             else if (item.Id == 3)
             {
