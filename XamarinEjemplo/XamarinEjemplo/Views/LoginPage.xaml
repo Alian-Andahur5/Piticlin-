@@ -8,8 +8,8 @@
 
         <Grid>
 
-            <Image Source="fondo.jpg" Aspect="AspectFill" />
-            <BoxView Color="LightBlue" Opacity="0.8"/>
+            <Image Source="fondo2.jpg" Aspect="AspectFill" />
+            <BoxView Color="White" Opacity="0.8"/>
 
             <Grid>
 
@@ -19,18 +19,18 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
 
-                <Image Grid.Row="0" Source="app.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+                <Image Grid.Row="0" Source="logoPiticlin.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
 
                 <StackLayout Grid.Row="1" Padding="30,20">
 
-                    <Entry Placeholder="Correo electronico" PlaceholderColor="White"/>
-                    <Entry Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"/>
-                    <Button Text="Iniciar Sesion" BackgroundColor="White" TextColor="LightBlue" Clicked="MenuClick"/>
+                    <Entry Placeholder="Correo electronico" PlaceholderColor="#00897b"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="#00897b" IsPassword="True"/>
+                    <Button Text="Iniciar Sesion" BackgroundColor="#00897b" TextColor="White" Clicked="MenuClick"/>
 
                     <StackLayout Orientation="Horizontal">
 
-                        <Label Text="Recuperar contraseña" TextColor="White"/>
-                        <Label Text="Registrarse" HorizontalOptions="EndAndExpand" TextColor="White"/>
+                        <Label Text="Recuperar contraseña" TextColor="#00897b"/>
+                        <Label Text="Registrarse" HorizontalOptions="EndAndExpand" TextColor="#00897b"/>
                     </StackLayout>
                     
                 </StackLayout>
