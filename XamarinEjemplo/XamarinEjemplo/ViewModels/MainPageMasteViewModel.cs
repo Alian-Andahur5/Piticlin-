@@ -23,7 +23,9 @@ namespace XamarinEjemplo.ViewModels
                     new MainPageMenuItem { Id = 3, Title = "Crear Moneda" },
                     new MainPageMenuItem { Id = 4, Title = "Crear Subasta" },
                     new MainPageMenuItem { Id = 5, Title = "Crear Venta" },
-                     new MainPageMenuItem { Id =6, Title = "Perfil" }
+                    new MainPageMenuItem { Id = 6, Title = "Crear Coleccion" },
+                    new MainPageMenuItem { Id = 7, Title = "Coleccion Creada"},
+                    new MainPageMenuItem { Id =8, Title = "Perfil" }
 
 
 

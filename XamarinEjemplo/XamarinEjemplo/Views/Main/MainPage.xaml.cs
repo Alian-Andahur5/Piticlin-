@@ -51,6 +51,14 @@ namespace XamarinEjemplo.Views
             }
             else if (item.Id == 6)
             {
+                item.TargetType = typeof(CrearColeccionPage);
+            }
+            else if (item.Id == 7)
+            {
+                item.TargetType = typeof(ColeccionPage);
+            }
+            else if (item.Id == 8)
+            {
                 item.TargetType = typeof(DatosPerfilPage);
             }
 

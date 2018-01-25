@@ -3,10 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinEjemplo.Views.ColeccionPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="10" Padding="10">
+
+            <ListView x:Name="ListaMonedas" ItemsSource="{Binding }">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding }" TextColor="Purple" Detail="{Binding }" DetailColor="Maroon" 
+                         ImageSource="{Binding foto}"/>
+                    </DataTemplate>        
+                </ListView.ItemTemplate>
+            </ListView>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
