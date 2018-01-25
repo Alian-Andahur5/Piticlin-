@@ -10,12 +10,12 @@ namespace XamarinEjemplo.ViewModels
 {
     public class ColeccionesPageViewModel : INotifyPropertyChanged
     {
-        private List<Item> _listMonedas;
+        private List<Coleccion> _listColeccion;
 
-        public List<Item> ListMonedas
+        public List<Coleccion> ListColeccion
         {
-            get { return _listMonedas; }
-            set { _listMonedas = value; }
+            get { return _listColeccion; }
+            set { _listColeccion = value; }
         }
 
         private List<SeparatedItems> _listSeparatedItems = new List<SeparatedItems>();
@@ -28,115 +28,90 @@ namespace XamarinEjemplo.ViewModels
         public ColeccionesPageViewModel()
         {
             //aqui le pega a la api en vez de datos duros
-            ListMonedas = new List<Item>
+            ListColeccion = new List<Coleccion>
             {
-                new Item{
-                    Nombre = "Moneda 1",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+
+                    Id = "",
+                    Nombre = "Coleccion 1",
+                    Detalle = " mi primera coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
+                    
                 },
-                new Item{
-                    Nombre = "Moneda 2",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+                    Id = "",
+                    Nombre = "Coleccion 2",
+                    Detalle = " mi segunda coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
                 },
-                new Item{
-                    Nombre = "Moneda 3",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+                    Id = "",
+                    Nombre = "Coleccion 3",
+                    Detalle = " mi tercera coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
                 },
-                new Item{
-                    Nombre = "Moneda 4",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+                    Id = "",
+                    Nombre = "Coleccion 4",
+                    Detalle = " mi cuarta coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
                 },
-                new Item{
-                    Nombre = "Moneda 5",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+                    Id = "",
+                    Nombre = "Coleccion 5",
+                    Detalle = " mi quinta coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
                 },
-                new Item{
-                    Nombre = "Moneda 6",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+                 Id = "",
+                    Nombre = "Coleccion 6",
+                    Detalle = " mi sexta coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
                 },
-                new Item{
-                    Nombre = "Moneda 7",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+                    Id = "",
+                    Nombre = "Coleccion 7",
+                    Detalle = " mi septima coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
                 },
-                new Item{
-                    Nombre = "Moneda 8",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+                    Id = "",
+                    Nombre = "Coleccion 8",
+                    Detalle = " mi octava coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
                 },
-                new Item{
-                    Nombre = "Moneda 9",
-                    Anio = "1990",
-                     Ceca= "",
-                     Nacionalidad = "Chile",
-                     Material = "Cobre",
-                     Origen = "",
-                     TipoColeccionesta = "",
-                     TipoMaterial = "",
-                     CoinImage = "coin.jpg"
+                new Coleccion{
+                 Id = "",
+                    Nombre = "Coleccion 9",
+                    Detalle = " mi novena coleccion ",
+                    Foto = "coin.jpg",
+                    Tipo = "",
+                    FechaCreacion = "12/02/2017"
                 }
             };
 
-            var cantPares = ListMonedas.Count / 2;
-            var sobrante = ListMonedas.Count % 2;
+            var cantPares = ListColeccion.Count / 2;
+            var sobrante = ListColeccion.Count % 2;
             var count = 0;
                 for (int i = 0; i < cantPares; i++)
                 {
-                    var fila = ListMonedas.GetRange(count, 2);
+                    var fila = ListColeccion.GetRange(count, 2);
                     ListSeparatedItems.Add(
                         new SeparatedItems
                         {
@@ -150,7 +125,7 @@ namespace XamarinEjemplo.ViewModels
                 ListSeparatedItems.Add(
                         new SeparatedItems
                         {
-                            ItemA = ListMonedas.Last(),
+                            ItemA = ListColeccion.Last(),
                             ItemB = null
                         }
                         );
@@ -159,8 +134,8 @@ namespace XamarinEjemplo.ViewModels
 
         public class SeparatedItems{
             
-           public Item ItemA { get; set; }
-           public Item ItemB { get; set; }
+           public Coleccion ItemA { get; set; }
+           public Coleccion ItemB { get; set; }
             
         }
 

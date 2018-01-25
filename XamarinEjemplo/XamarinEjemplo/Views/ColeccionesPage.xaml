@@ -15,12 +15,12 @@
                             <StackLayout Grid.Column="0">
                                 <Label BindingContext="{Binding ItemA}"  HorizontalOptions="Center"
                                        Text="{Binding Nombre}" />
-                                <Image BindingContext="{Binding ItemA}" WidthRequest="100" Source="{Binding CoinImage}" />
+                                <Image BindingContext="{Binding ItemA}" WidthRequest="100" Source="{Binding Foto}" />
                             </StackLayout>
                             <StackLayout Grid.Column="1">
                                 <Label BindingContext="{Binding ItemB}" HorizontalOptions="Center"
                                         Text="{Binding Nombre}" />
-                                <Image BindingContext="{Binding ItemB}" WidthRequest="100" Source="{Binding CoinImage}" />
+                                <Image BindingContext="{Binding ItemB}" WidthRequest="100" Source="{Binding Foto}" />
                             </StackLayout>
                         </Grid>
                     </ViewCell.View>
