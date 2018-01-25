@@ -31,7 +31,7 @@ namespace XamarinEjemplo.Views
            
             else if (item.Id == 1)
             {
-                item.TargetType = typeof(HistorialPage);
+                item.TargetType = typeof(SubastaCreadaPage);
             }
             else if (item.Id == 2)
             {
