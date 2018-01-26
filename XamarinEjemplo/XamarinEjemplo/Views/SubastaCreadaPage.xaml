@@ -1,12 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              x:Class="XamarinEjemplo.Views.SubastaCreadaPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame HorizontalOptions="Fill" HeightRequest="150">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="40" />
+                    </Grid.ColumnDefinitions>
+                    <iconize:IconImage IconSize="40"
+                    Icon="md-keyboard-arrow-left" VerticalOptions="Center" Grid.Column="0">
+                        <iconize:IconImage.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding PrevImage}"/>
+                        </iconize:IconImage.GestureRecognizers>
+                    </iconize:IconImage>
+                    <Image Grid.Column="1" Source="{Binding SrcImage}" />
+                    <iconize:IconImage
+                        IconSize="40"
+                        Icon="md-keyboard-arrow-right" VerticalOptions="Center" Grid.Column="2">
+                        <iconize:IconImage.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NextImage}"/>
+                        </iconize:IconImage.GestureRecognizers>
+                    </iconize:IconImage>
+                </Grid>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -9,6 +9,7 @@ using Android.OS;
 using ImageCircle.Forms.Plugin.Droid;
 using Plugin.Iconize;
 using Android;
+using FFImageLoading.Forms.Droid;
 
 namespace XamarinEjemplo.Droid
 {
@@ -24,6 +25,7 @@ namespace XamarinEjemplo.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             ImageCircleRenderer.Init();
+            CachedImageRenderer.Init(true);
             Iconize.Init(Resource.Id.toolbar, Resource.Id.sliding_tabs);
             LoadApplication(new App());
         }

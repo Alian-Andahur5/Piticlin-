@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -43,7 +39,7 @@ namespace XamarinEjemplo.Views
             }
             else if (item.Id == 4)
             {
-                item.TargetType = typeof(CrearSubastaPage);
+                item.TargetType = typeof(SubastaCreadaPage);
             }
             else if (item.Id == 5)
             {

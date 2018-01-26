@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinEjemplo.ViewModels;
 
 namespace XamarinEjemplo.Views
 {
@@ -15,6 +16,7 @@ namespace XamarinEjemplo.Views
 		public SubastaCreadaPage ()
 		{
 			InitializeComponent ();
+            BindingContext = new SubastaCreadaViewModel();
 		}
 	}
 }
