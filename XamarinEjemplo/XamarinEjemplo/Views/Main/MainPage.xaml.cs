@@ -39,7 +39,7 @@ namespace XamarinEjemplo.Views
             }
             else if (item.Id == 4)
             {
-                item.TargetType = typeof(SubastaCreadaPage);
+                item.TargetType = typeof(CrearSubastaPage);
             }
             else if (item.Id == 5)
             {
