@@ -27,11 +27,11 @@ namespace XamarinEjemplo.Views
            
             else if (item.Id == 1)
             {
-                item.TargetType = typeof(SubastaCreadaPage);
+                item.TargetType = typeof(CrearColeccionPage);
             }
             else if (item.Id == 2)
             {
-                item.TargetType = typeof(MonedaPage);
+                item.TargetType = typeof(ColeccionPage);
             }
             else if (item.Id == 3)
             {
@@ -43,17 +43,14 @@ namespace XamarinEjemplo.Views
             }
             else if (item.Id == 5)
             {
-                item.TargetType = typeof(CrearVentaPage);
+                item.TargetType = typeof(SubastaCreadaPage);
             }
             else if (item.Id == 6)
             {
-                item.TargetType = typeof(CrearColeccionPage);
+                item.TargetType = typeof(CrearVentaPage);
             }
+           
             else if (item.Id == 7)
-            {
-                item.TargetType = typeof(ColeccionPage);
-            }
-            else if (item.Id == 8)
             {
                 item.TargetType = typeof(DatosPerfilPage);
             }
