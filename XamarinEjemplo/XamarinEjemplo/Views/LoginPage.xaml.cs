@@ -6,22 +6,17 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinEjemplo.ViewModels;
 
 namespace XamarinEjemplo.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LoginPage : ContentPage
-	{
-		public LoginPage ()
-		{
-			InitializeComponent ();
-		}
-
-        protected void MenuClick(object sender, EventArgs evento)
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class LoginPage : ContentPage
+    {
+        public LoginPage()
         {
-            App.Current.MainPage = new NavigationPage(new MainPage());
-
-
-           }
+            InitializeComponent();
+            BindingContext = new LoginPageViewModel();
         }
     }
+}

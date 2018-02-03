@@ -13,8 +13,8 @@ namespace XamarinEjemplo.Providers
     public static class ServicesHttp
     {
 
-        const string SERVER = "localhost";
-        const string PORT = "8080";
+        const string SERVER = "http://192.168.8.100";
+        const string PORT = "3002";
 
         ///<summary>
         ///POST METHOD
@@ -40,6 +40,7 @@ namespace XamarinEjemplo.Providers
             }
             catch (Exception e)
             {
+                Console.WriteLine(e);
                 return null;
             }
         }

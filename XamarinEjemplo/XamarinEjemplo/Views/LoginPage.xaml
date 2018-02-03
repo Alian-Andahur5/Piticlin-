@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             NavigationPage.HasNavigationBar="False"
              x:Class="XamarinEjemplo.Views.LoginPage">
     <ContentPage.Content>
 
@@ -23,9 +22,9 @@
 
                 <StackLayout Grid.Row="1" Padding="30,20">
 
-                    <Entry Placeholder="Correo electronico" PlaceholderColor="#00897b"/>
-                    <Entry Placeholder="Contraseña" PlaceholderColor="#00897b" IsPassword="True"/>
-                    <Button Text="Iniciar Sesion" BackgroundColor="#00897b" TextColor="White" Clicked="MenuClick"/>
+                    <Entry Placeholder="Correo electronico" Text="{Binding Email}" PlaceholderColor="#00897b"/>
+                    <Entry Placeholder="Contraseña" Text="{Binding Clave}" PlaceholderColor="#00897b" IsPassword="True"/>
+                    <Button Text="Iniciar Sesion" BackgroundColor="#00897b" TextColor="White" Command="{Binding LoginButton}"/>
 
                     <StackLayout Orientation="Horizontal">
 
